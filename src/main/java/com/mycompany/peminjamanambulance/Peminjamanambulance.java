@@ -3,7 +3,7 @@
  */
 
 package com.mycompany.peminjamanambulance;
-
+import com.mycompany.peminjamanambulance.ui.LoginFrame;
 /**
  *
  * @author MSI
@@ -11,6 +11,8 @@ package com.mycompany.peminjamanambulance;
 public class Peminjamanambulance {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        java.awt.EventQueue.invokeLater(() -> {
+            new LoginFrame().setVisible(true);
+        });
     }
 }
